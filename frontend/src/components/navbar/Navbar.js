@@ -1,10 +1,12 @@
 import React from "react";
 import {
   FaBars,
+  FaCalendar,
   FaCalendarCheck,
   FaCartPlus,
   FaPersonBooth,
   FaSearch,
+  FaSign,
 } from "react-icons/fa";
 import "./navbar.scss";
 function Navbar(props) {
@@ -12,20 +14,19 @@ function Navbar(props) {
     <nav id="nav">
       <div class="nav-center">
         <div class="nav-header">
-          {/* <img src={} class="logo" alt="logo" /> */}
-          <div>
-            <div>
-              <h1>Fabrics</h1>
+          <div className="heading">
+            <div className="logo-heading">
               <button class="nav-toggle">
                 <FaBars />
               </button>
+              <h1>Fabrics</h1>
             </div>
-            <div>
-              <button className="cart-button">
-                <FaCartPlus />
-              </button>
+            <div className="heading-btn-container">
               <button className="search-button">
                 <FaSearch />
+              </button>
+              <button className="cart-button">
+                <FaCartPlus />
               </button>
             </div>
           </div>
@@ -55,17 +56,20 @@ function Navbar(props) {
           </div>
         </div>
 
-        <div>
-          <input type="text" />
+        <div className="search-container">
+          <button className="search-desktop-button">
+            <FaSearch />
+          </button>
         </div>
         <div className="users-info-section">
-          <button>
-            <FaPersonBooth />
+          <button className="signin-button btn">
+            LogIn {""}
+            <FaSign />
           </button>
-          <button>
-            <FaCalendarCheck />
+          <button className="notification-button">
+            <FaCalendar />
           </button>
-          <button>
+          <button className="cart-desktop-button">
             <FaCartPlus />
           </button>
         </div>
