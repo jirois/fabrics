@@ -1,11 +1,4 @@
-$primary-color: #1e60d4;
-$secondary-color: #07399c;
-$accent-color: #698ef7;
-$white: #ffffff;
-$black: #222222;
-$success-green: #00ce41;
-$warning-red: #dc2131;
-
+@import "./utils/styles/variable";
 /*
 =============== 
 Global Styles
@@ -23,42 +16,115 @@ html {
 }
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background: $primary-color;
-  color: $white;
+  background: $white;
+  color: grey;
   line-height: 1.5;
   font-size: 0.875rem;
 
-  ul {
-    list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-  }
+  /* Heading */
+
   h1,
   h2,
   h3,
-  h4 {
-    letter-spacing: var(--spacing);
-    text-transform: capitalize;
-    line-height: 1.25;
-    margin-bottom: 0.75rem;
+  h4,
+  h5,
+  h6 {
+    font-family: $font-heading;
+    margin-top: $spacing-12;
+    margin-bottom: $spacing-6;
+    line-height: $lineHeight-tight;
+    letter-spacing: -0.025em;
   }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $fontWeight-bold;
+    color: $color-heading;
+  }
+
   h1 {
-    font-size: 3rem;
+    font-weight: $fontWeight-black;
+    font-size: $fontSize-6;
+    color: $color-heading-black;
   }
+
   h2 {
-    font-size: 2rem;
+    font-size: $fontSize-5;
   }
+
   h3 {
-    font-size: 1.25rem;
+    font-size: $fontSize-4;
   }
+
   h4 {
-    font-size: 0.875rem;
+    font-size: $fontSize-3;
   }
+
+  h5 {
+    font-size: $fontSize-2;
+  }
+
+  h6 {
+    font-size: $fontSize-1;
+  }
+
+  h1 > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h2 > a,
+  h3 > a,
+  h4 > a,
+  h5 > a,
+  h6 > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Prose */
+
   p {
-    margin-bottom: 1.25rem;
-    color: var(--clr-grey-5);
+    line-height: $lineHeight-relaxed;
+    --baseline-multiplier: 0.179;
+    --x-height-multiplier: 0.35;
+    margin: $spacing-0 $spacing-0 $spacing-8 $spacing-0;
+    padding: $spacing-0;
+    text-align: justify;
   }
+
+  ul,
+  ol {
+    margin-left: $spacing-0;
+    margin-right: $spacing-0;
+    padding: $spacing-0;
+    margin-bottom: $spacing-8;
+    list-style-position: outside;
+    list-style-image: none;
+  }
+
+  ul li,
+  ol li {
+    padding-left: $spacing-0;
+    margin-bottom: $spacing-8 / 2;
+  }
+
+  li > p {
+    margin-bottom: $spacing-8 / 2;
+  }
+
+  li *:last-child {
+    margin-bottom: $spacing-0;
+  }
+
+  li > ul {
+    margin-left: $spacing-8;
+    margin-top: $spacing-8 / 2;
+  }
+
   @media screen and (min-width: 800px) {
     h1 {
       font-size: 4rem;
@@ -83,27 +149,84 @@ body {
     }
   }
 
-  // template
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 10rem 1fr 5rem;
-    height: 100%;
+  /* 
+====== 
+Buttons 
+======
+*/
+  .btn,
+  .btn-white,
+  .btn-primary {
+    text-transform: uppercase;
+    letter-spacing: $spacing-1;
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
+    padding: 0.45rem 0.8rem;
+    display: inline-block;
+    transition: $transition;
+    cursor: pointer;
+    font-size: 0.8rem;
+    background: transparent;
+    border-radius: $radius-1;
+    display: inline-block;
+  }
+  .btn:hover {
+    background: $secondary-color;
+    color: $white;
+  }
+  .btn-white {
+    background: transparent;
+    color: $white;
+    border-color: $white;
+  }
+  .btn-white:hover {
+    background: $white;
+    color: $secondary-color;
+  }
+  .btn-primary {
+    background: $secondary-color;
+    color: $white;
+    border-color: transparent;
+  }
+  .btn-primary:hover {
+    background: $accent-color;
+    color: $secondary-color;
+  }
+  .btn-block {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: $lightShadow;
+    text-align: center;
+  }
+  .btn-details {
+    padding: 0.25rem 0.4rem;
+  }
+  .btn-details:hover {
+    background: $secondary-color;
+    border-color: $accent-color;
+  }
+}
+// template
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem 1fr 5rem;
+  height: 100%;
 
-    header {
-      grid-area: header;
-    }
-    main {
-      grid-area: main;
-      padding: 1rem;
-    }
-    footer {
-      grid-area: footer;
-      color: $white;
-    }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+    padding: 1rem;
+  }
+  footer {
+    grid-area: footer;
+    color: $white;
   }
 }
