@@ -16,7 +16,8 @@ nav {
 .signin-button,
 .notification-button,
 .cart-desktop-button,
-.search-desktop-button {
+.search-desktop-button,
+.category-button {
   font-size: 1.2rem;
   color: $color-heading-black;
   background: transparent;
@@ -86,7 +87,8 @@ nav {
 }
 
 .search-container,
-.users-info-section {
+.users-info-section,
+.category-dropdown {
   display: none;
 }
 
@@ -105,6 +107,42 @@ nav {
   .nav-toggle {
     display: none;
   }
+
+  .category-button {
+    display: flex;
+    padding: 0.1rem 0;
+    margin-left: 1rem;
+    color: $color-heading-black;
+    font-size: $fontSize-2;
+    cursor: pointer;
+    margin-top: -0.2rem;
+  }
+
+  .category-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .category-content {
+    display: none;
+    position: absolute;
+    background: $white;
+    min-width: 160px;
+    box-shadow: $lightShadow;
+  }
+  .links a {
+    display: block;
+    padding: 0.8rem 1rem 0;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      margin-left: 1rem;
+    }
+  }
+  .category-dropdown:hover .category-content {
+    display: block;
+  }
+
   .search-button,
   .cart-button {
     display: none;

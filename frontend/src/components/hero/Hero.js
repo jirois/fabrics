@@ -10,7 +10,7 @@ function Hero(props) {
           neque sunt in? Id, necessitatibus quos quisquam distinctio laudantium
           fugiat?
         </p>
-        <a href="#tours" class="btn btn-white">
+        <a href="#tours" class="btn ">
           explore tours
         </a>
       </div>
