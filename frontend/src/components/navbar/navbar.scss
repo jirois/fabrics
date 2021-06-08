@@ -121,6 +121,7 @@ nav {
   .category-dropdown {
     position: relative;
     display: inline-block;
+    z-index: 2;
   }
   .category-content {
     display: none;
