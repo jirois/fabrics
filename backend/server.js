@@ -1,11 +1,11 @@
 import express from "express";
-import { products } from "./product.js";
+import { data } from "./data.js";
 
 const app = express();
 const port = process.env.PORT || 5001;
 
-app.get("/products", (req, res) => {
-  res.send(products);
+app.get("/api/products", (req, res) => {
+  res.send(data.products);
 });
 
 app.get("/", (req, res) => {
