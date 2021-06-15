@@ -3,6 +3,7 @@ import {
   FaBars,
   FaCalendar,
   FaCalendarCheck,
+  FaCaretDown,
   FaCartPlus,
   FaPersonBooth,
   FaSearch,
@@ -20,6 +21,35 @@ function Navbar(props) {
                 <FaBars />
               </button>
               <h1>Fabrics</h1>
+              <div className="category-dropdown">
+                <span className=" btn btn-primary category-button">
+                  categories
+                </span>
+                <div class="category-content">
+                  <ul class="links">
+                    <li>
+                      <a href="#home" class="scroll-link">
+                        home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#about" class="scroll-link">
+                        about
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#services" class="scroll-link">
+                        services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tours" class="scroll-link">
+                        tours
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div className="heading-btn-container">
               <button className="search-button">
