@@ -1,0 +1,46 @@
+.LoadingBox01 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ccc inset;
+
+  &:before {
+    content: "";
+    width: 100px;
+    height: 170px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: -10px;
+    margin-left: -50px;
+    animation: rotate-active 5s linear infinite;
+  }
+}
+.LoadingText {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  text-align: center;
+  line-height: 150px;
+  font-size: 23px;
+}
+@keyframes rotate-active {
+  0% {
+    -webkit-transform: rotate(360deg); /* Safari 和 Chrome */
+    -moz-transform: rotate(360deg); /* Firefox */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -o-transform: rotate(360deg); /* Opera */
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg); /* Safari 和 Chrome */
+    -moz-transform: rotate(0deg); /* Firefox */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -o-transform: rotate(0deg); /* Opera */
+    transform: rotate(0deg);
+  }
+}
