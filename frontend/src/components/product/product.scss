@@ -1,0 +1,65 @@
+@import "../../utils/styles/variable";
+
+.products {
+  width: 85vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+
+  @media screen and (min-width: 576px) {
+    & {
+      grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+    }
+  }
+
+  .product {
+    background: $white;
+    margin-bottom: 2rem;
+    box-shadow: $lightShadow;
+    transition: $transition;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: $radius-2;
+
+    &:hover {
+      box-shadow: $darkShadow;
+    }
+    .img-container {
+      width: 100%;
+      height: 20rem;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: $radius-2;
+      border-top-right-radius: $radius-2;
+    }
+    .product-footer {
+      padding: 1.5rem;
+
+      & p {
+        color: $color-text-light;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .product-footer h3 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .product-footer h4 {
+      font-size: 1.1rem;
+      font-weight: 550;
+      letter-spacing: $spacing-1;
+      margin: 0;
+    }
+
+    .product-footer h3,
+    .product-footer h4,
+    .product-footer p {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
