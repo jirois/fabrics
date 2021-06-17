@@ -16,7 +16,10 @@ function HomeScreen(props) {
   }, [dispatch]);
   return (
     <>
-      <section id="about" className="section">
+      <section id="fabric" className=" fabrics section">
+        <div class="title">
+          <h2>fabrics</h2>
+        </div>
         {loading ? (
           <LoadingBox />
         ) : error ? (
@@ -27,18 +30,19 @@ function HomeScreen(props) {
           <Product products={products} />
         )}
       </section>
-      <section id="services" className="section">
+      <section id="services" className=" services section">
         <div class="title">
-          <h2>
-            our <span>services</span>
-          </h2>
+          <h2>services</h2>
         </div>
       </section>
-      <section id="tours" className="section">
+      <section id="experience" className="experiences section">
         <div class="title">
-          <h2>
-            featured <span>tours</span>
-          </h2>
+          <h2>Customers Experiences</h2>
+        </div>
+      </section>
+      <section id="about" className=" about section">
+        <div class="title">
+          <h2>about us</h2>
         </div>
       </section>
     </>

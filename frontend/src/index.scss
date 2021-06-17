@@ -230,3 +230,29 @@ Buttons
     color: $white;
   }
 }
+
+// HomeScreen
+
+.section {
+  padding: 5.9em 0;
+  background: $white;
+
+  .title > h2 {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin: 0 1rem;
+    color: $color-heading-black;
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    .title > h2 {
+      font-size: 2.1rem;
+      padding-bottom: 30px;
+      margin: 0 5rem;
+    }
+  }
+}
