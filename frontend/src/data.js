@@ -31,3 +31,94 @@ export const data = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
 ];
+
+export const aside_items = [
+  {
+    id: 1,
+    header: "Cashmeres",
+    item1: [
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+    ],
+  },
+  {
+    id: 2,
+    header: "Senates",
+    item1: [
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+    ],
+  },
+  {
+    id: 3,
+    header: "Calrupt",
+    item1: [
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+    ],
+  },
+  {
+    id: 4,
+    header: "Hugo",
+    item1: [
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+      {
+        headerItem1: " Men in white",
+        desc: "This is the man in white section",
+      },
+    ],
+  },
+];

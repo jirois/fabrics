@@ -4,6 +4,17 @@ nav {
   background: $white;
   box-shadow: $light-shadow;
 }
+/* fixed nav */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
+  box-shadow: $lightShadow;
+  transition: $transition;
+  z-index: 10;
+}
 .nav-header {
   display: flex;
   flex-direction: column;
