@@ -27,6 +27,7 @@ const Button = () => {
         <span></span>
         <span></span>
       </div>
+      <Sidebar isToggle={isToggle} closeSidebar={closeSidebar} />
     </>
   );
 };

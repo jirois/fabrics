@@ -44,6 +44,7 @@ function Navbar(props) {
               <div className="logo-heading">
                 <button class="nav-toggle" type="button" onClick={openSidebar}>
                   <FaBars />
+                  <Sidebar isSidebar={isSidebar} closeSidebar={closeSidebar} />
                 </button>
                 <h1>Fabrics</h1>
                 <div className="category-dropdown">
@@ -130,7 +131,6 @@ function Navbar(props) {
           </div>
         </div>
       </nav>
-      {/* <Sidebar isSidebar={isSidebar} closeSidebar={closeSidebar} /> */}
     </>
   );
 }
