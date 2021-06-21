@@ -4,7 +4,10 @@ import "./sidebar.scss";
 
 function Sidebar({ closeSidebar, isSidebar }) {
   return (
-    <nav id="sidebar" className="sidebar-wrapper">
+    <nav
+      id="sidebar"
+      className={`${isSidebar ? 'sidebar-wrapper open' : 'sidebar-wrapper'}`}
+    >
       <div className="sidebar-content">
         <div className="sidebar-brand">
           <a href="#">Fabric Arena</a>

@@ -9,6 +9,7 @@ import {
   FaSearch,
   FaSign,
 } from "react-icons/fa";
+import Button from "../menuButton/button";
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 
@@ -46,6 +47,7 @@ function Navbar(props) {
                   <FaBars />
                   <Sidebar isSidebar={isSidebar} closeSidebar={closeSidebar} />
                 </button>
+                {/* <Button /> */}
                 <h1>Fabrics</h1>
                 <div className="category-dropdown">
                   <span className=" btn btn-primary category-button">
