@@ -2,9 +2,12 @@ import React, { useEffect } from "react";
 import { aside_items } from "../../data";
 import "./sidebar.scss";
 
-function Sidebar({ closeSidebar, isSidebar }) {
+function Sidebar({ closeSidebar, isToggle }) {
   return (
-    <nav id="sidebar" className="sidebar-wrapper">
+    <nav
+      id="sidebar"
+      className={`${isToggle} ? 'sidebar-wrapper open' : 'sidebar-wrapper'`}
+    >
       <div className="sidebar-content">
         <div className="sidebar-brand">
           <a href="#">Fabric Arena</a>

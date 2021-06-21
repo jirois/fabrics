@@ -9,6 +9,7 @@ import {
   FaSearch,
   FaSign,
 } from "react-icons/fa";
+import Button from "../menuButton/button";
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 
@@ -42,10 +43,11 @@ function Navbar(props) {
           <div class="nav-header">
             <div className="heading">
               <div className="logo-heading">
-                <button class="nav-toggle" type="button" onClick={openSidebar}>
+                {/* <button class="nav-toggle" type="button" onClick={openSidebar}>
                   <FaBars />
                   <Sidebar isSidebar={isSidebar} closeSidebar={closeSidebar} />
-                </button>
+                </button> */}
+                <Button />
                 <h1>Fabrics</h1>
                 <div className="category-dropdown">
                   <span className=" btn btn-primary category-button">

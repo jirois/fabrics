@@ -1,24 +1,29 @@
-.sidebars {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // height: 100%;
-  // background: var(--clr-white);
-  // display: grid;
-  // grid-template-rows: auto 1fr auto;
-  // row-gap: 1rem;
-  // box-shadow: var(--clr-red-dark);
-  // transition: var(--transition);
-  // transform: translate(-100%);
-  display: none;
-  background-color: chocolate;
+@import "../../utils/styles/variable";
 
-  & h4 {
-    font-size: 24px;
-    color: gold;
+.sidebar-wrapper {
+  width: 260px;
+  height: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $accent-color;
+  color: $white;
+  transform: translate(-100%);
+  transition: all 0.2s linear;
+  z-index: 999;
+
+  & ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  & a {
+    text-decoration: none;
   }
 }
-.show-sidebar {
-  display: block;
+.sidebar-wrapper.open {
+  transform: translate(0);
+  z-index: 400;
 }

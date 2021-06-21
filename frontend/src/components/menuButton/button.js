@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import { useGlobalContext } from '../context/context'
-import Sidebar from "../sidebar/sidebar";
+import Sidebar from "../sidebar/Sidebar";
 
 import "./button.scss";
 const Button = () => {
