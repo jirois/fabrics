@@ -122,13 +122,12 @@
   & .form-control {
     background: #3a3f48;
     outline: none;
-    border:none
+    border:none;
   }
 
   & .input-group-append i {
     color: #b8c2d3;
   }
-
 
 }
 
@@ -226,9 +225,10 @@
   & .sidebar-dropdown .sidebar-submenu li a .label {
     float: right;
     margin-top: 0px;
+
   }
 
-  & .sidebar-menu:hover .sidebar-submenu {
+  & .sidebar-dropdown:hover .sidebar-submenu {
     display: block;
   }
 
@@ -266,6 +266,26 @@
 }
 
 }
+
+.badge-pill{
+  border-radius: 5px;
+  padding: 1px 3px;
+  font-size: 12px;
+}
+
+
+.badge-warning {
+  background: #ffd30e;
+}
+
+.badge-danger {
+  background: #f55d05;
+}
+.badge-success {
+  background: #259708;
+}
+
+
 
 
 .badge-sonar {
