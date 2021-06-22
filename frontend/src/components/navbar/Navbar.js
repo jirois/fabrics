@@ -17,10 +17,12 @@ function Navbar(props) {
   const [isSidebar, setSidebar] = useState(false);
   console.log(isSidebar);
   const openSidebar = () => {
-    setSidebar(!isSidebar);
+    setSidebar(true);
   };
   const closeSidebar = () => {
-    setSidebar(false);
+    setSidebar(false)
+    console.log("click")
+    console.log(isSidebar)
   };
   const navContainerRef = useRef(null);
   useEffect(() => {

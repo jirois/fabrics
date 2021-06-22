@@ -12,13 +12,13 @@ function Sidebar({ closeSidebar, isSidebar }) {
         <div className="sidebar-brand">
           <a href="#">Fabric Arena</a>
           <div id="close-sidebar">
-            <i className="fas fa-times"></i>
+            <i className="fas fa-times"  onClick={closeSidebar}></i>
           </div>
         </div>
         {/* sidebar-brand */}
         <div className="sidebar-header">
           <div className="user-pic" style={{ color: "white" }}>
-            <i className="fa fa-user-circle fa-4x" aria-hidden="true"></i>
+            <i className="fa fa-user-circle fa-3x" aria-hidden="true"></i>
           </div>
           <div className="user-info">
             <span className="user-name">
