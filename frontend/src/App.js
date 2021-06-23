@@ -19,7 +19,7 @@ function App() {
     <div clasName="grid-container">
       <header id="home">
         <Navbar />
-        <Hero />
+        {/* <Hero /> */}
       </header>
       <main>
         <HomeScreen />

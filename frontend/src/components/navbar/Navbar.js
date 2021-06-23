@@ -40,7 +40,7 @@ function Navbar(props) {
 
   return (
     <>
-      <nav id="nav" ref={navContainerRef}>
+      <nav id="nav" ref={navContainerRef} >
         <div class="nav-center">
           <div class="nav-header">
             <div className="heading">

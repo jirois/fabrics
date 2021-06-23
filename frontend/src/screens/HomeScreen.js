@@ -4,7 +4,7 @@ import { listProducts } from "../actions/productActions";
 import LoadingBox from "../components/loading/LoadingBox";
 import MessageBox from "../components/messagebox/MessageBox";
 import Product from "../components/product/Product";
-
+import Hero from "../components/hero/Hero";
 function HomeScreen(props) {
   const dispatch = useDispatch();
   const productList = useSelector((state) => state.productList);
@@ -16,6 +16,7 @@ function HomeScreen(props) {
   }, [dispatch]);
   return (
     <>
+      <Hero />
       <section id="fabric" className=" fabrics section">
         <div class="title">
           <h2>fabrics</h2>
